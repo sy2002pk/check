@@ -1,0 +1,56 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+	font-family: 'Valorant';
+	src: url('./assets/images/fonts/valorant-font.ttf') format('truetype'); /* Điều chỉnh đường dẫn */
+	font-weight: normal;
+	font-style: normal;
+  }
+@layer utilities {
+	@keyframes slideInLeft {
+		0% {
+		transform: translateX(-100%);
+		opacity: 0;
+		}
+		100% {
+		transform: translateX(0);
+		opacity: 1;
+		}
+	}
+
+	.slide-in-left {
+		animation: slideInLeft 1s ease-out forwards;
+	}
+}
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+  }
+  html {
+	font-size: 16px;
+	scroll-behavior: smooth;
+  }
+  
+  body {
+	width: 100vw;
+	aspect-ratio: 16 / 9;
+	background-color: #181818;
+	font-family: 'Amarante', sans-serif !important;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-size: cover;
+	background-position: center;
+	overflow: hidden;
+	scroll-behavior: smooth;
+  }
+  
+  .fit-content {
+	width: max-content;
+  }
